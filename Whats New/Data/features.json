@@ -1,0 +1,72 @@
+
+
+
+[
+    {
+        "version": "1.2",
+        "new": [
+            {
+                "body": "Available for iOS 16, iPadOS 16, macOS 13",
+                "icon": "hammer.fill"
+                "title": "Broken UI",
+                "subtitle": "Bug fixes"
+            },
+            
+            {
+                "body": "Written to test how it look like",
+                "icon": "macpro.gen3.server"
+                "title": "Design Test",
+                "subtitle": "Design"
+            },
+            
+            {
+                "body": "Something to check, should be #3",
+                "icon": "arrow.triangle.pull"
+                "title": "Local Files",
+                "subtitle": "Works best with your data 🥳"
+            },
+            
+            {
+                "body": "Package can work with different platforms",
+                "icon": "keyboard"
+                "title": "Ьгдешздфеащкь",
+                "subtitle": "Check this out"
+            }
+        ]
+    },
+    
+    {
+        "version": "1.1",
+        "new": [
+            {
+                "body": "",
+                "icon": ""
+                "title": "",
+                "subtitle": ""
+            },
+            
+            {
+                "body": "",
+                "icon": ""
+                "title": "",
+                "subtitle": ""
+            },
+            
+            {
+                "body": "",
+                "icon": ""
+                "title": "",
+                "subtitle": ""
+            },
+            
+            {
+                "body": "",
+                "icon": ""
+                "title": "",
+                "subtitle": ""
+            }
+        ]
+    }
+    
+]
+

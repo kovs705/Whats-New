@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E128B3C28BF636A005655F6 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E128B3B28BF636A005655F6 /* Data.swift */; };
+		4E128B3E28BF63F0005655F6 /* features.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E128B3D28BF63F0005655F6 /* features.json */; };
 		4EF9FBDF28BEC7C50069B8CD /* Whats_NewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9FBDE28BEC7C50069B8CD /* Whats_NewApp.swift */; };
 		4EF9FBE128BEC7C50069B8CD /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9FBE028BEC7C50069B8CD /* LandingPage.swift */; };
 		4EF9FBE328BEC7C70069B8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9FBE228BEC7C70069B8CD /* Assets.xcassets */; };
@@ -14,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E128B3B28BF636A005655F6 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4E128B3D28BF63F0005655F6 /* features.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = features.json; sourceTree = "<group>"; };
+		4E128B4028BF6C6D005655F6 /* WhatsNewPack */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = WhatsNewPack; sourceTree = "<group>"; };
 		4EF9FBDB28BEC7C50069B8CD /* Whats New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whats New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF9FBDE28BEC7C50069B8CD /* Whats_NewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whats_NewApp.swift; sourceTree = "<group>"; };
 		4EF9FBE028BEC7C50069B8CD /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
@@ -32,9 +37,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E128B3A28BF6353005655F6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4E128B3B28BF636A005655F6 /* Data.swift */,
+				4E128B3D28BF63F0005655F6 /* features.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		4EF9FBD228BEC7C50069B8CD = {
 			isa = PBXGroup;
 			children = (
+				4E128B4028BF6C6D005655F6 /* WhatsNewPack */,
 				4EF9FBDD28BEC7C50069B8CD /* Whats New */,
 				4EF9FBDC28BEC7C50069B8CD /* Products */,
 			);
@@ -53,6 +68,7 @@
 			children = (
 				4EF9FBDE28BEC7C50069B8CD /* Whats_NewApp.swift */,
 				4EF9FBE028BEC7C50069B8CD /* LandingPage.swift */,
+				4E128B3A28BF6353005655F6 /* Data */,
 				4EF9FBE228BEC7C70069B8CD /* Assets.xcassets */,
 				4EF9FBE428BEC7C70069B8CD /* Preview Content */,
 			);
@@ -127,6 +143,7 @@
 			files = (
 				4EF9FBE628BEC7C70069B8CD /* Preview Assets.xcassets in Resources */,
 				4EF9FBE328BEC7C70069B8CD /* Assets.xcassets in Resources */,
+				4E128B3E28BF63F0005655F6 /* features.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EF9FBE128BEC7C50069B8CD /* LandingPage.swift in Sources */,
+				4E128B3C28BF636A005655F6 /* Data.swift in Sources */,
 				4EF9FBDF28BEC7C50069B8CD /* Whats_NewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
