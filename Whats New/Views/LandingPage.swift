@@ -18,6 +18,12 @@ import SwiftUI
 
 struct LandingPage: View {
     
+    // MARK: - States properties
+    @State private var showNew: Bool = false
+    @EnvironmentObject var userData: UserData
+    
+    let object = featuresData[0]
+    
     var body: some View {
         
         NavigationView {
@@ -25,7 +31,7 @@ struct LandingPage: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: WhatsNewPage(), label: {
+                NavigationLink(destination: WhatsNewPage(featureObject: object).environmentObject(UserData()), label: {
                     
                     ZStack(alignment: .center) {
                         RoundedRectangle(cornerRadius: 20)
@@ -54,6 +60,6 @@ struct LandingPage: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LandingPage()
+        LandingPage().environmentObject(UserData())
     }
 }

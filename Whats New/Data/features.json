@@ -6,30 +6,37 @@
         "version": "1.2",
         "new": [
             {
+                "body": "Available for iPad Pro and other platforms",
+                "icon": "scribble",
+                "title": "Apple Pencil 2",
+                "subtitle": "Supported"
+            },
+            
+            {
                 "body": "Available for iOS 16, iPadOS 16, macOS 13",
-                "icon": "hammer.fill"
+                "icon": "hammer.fill",
                 "title": "Broken UI",
                 "subtitle": "Bug fixes"
             },
             
             {
                 "body": "Written to test how it look like",
-                "icon": "macpro.gen3.server"
+                "icon": "macpro.gen3.server",
                 "title": "Design Test",
                 "subtitle": "Design"
             },
             
             {
                 "body": "Something to check, should be #3",
-                "icon": "arrow.triangle.pull"
+                "icon": "arrow.triangle.pull",
                 "title": "Local Files",
                 "subtitle": "Works best with your data 🥳"
             },
             
             {
                 "body": "Package can work with different platforms",
-                "icon": "keyboard"
-                "title": "Ьгдешздфеащкь",
+                "icon": "keyboard",
+                "title": "Something here",
                 "subtitle": "Check this out"
             }
         ]
@@ -40,28 +47,28 @@
         "new": [
             {
                 "body": "Test 1.1",
-                "icon": "Test 1.1"
+                "icon": "Test 1.1",
                 "title": "Item 1",
                 "subtitle": "Test 1.1"
             },
             
             {
                 "body": "Test 1.1",
-                "icon": "Test 1.1"
+                "icon": "Test 1.1",
                 "title": "Item 2",
                 "subtitle": "Test 1.1"
             },
             
             {
                 "body": "Test 1.1",
-                "icon": "Test 1.1"
+                "icon": "Test 1.1",
                 "title": "Item 3",
                 "subtitle": "Test 1.1"
             },
             
             {
                 "body": "Test 1.1",
-                "icon": "Test 1.1"
+                "icon": "Test 1.1",
                 "title": "Item 4",
                 "subtitle": "Test 1.1"
             }

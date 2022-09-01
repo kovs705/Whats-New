@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct WNSubView: View {
+    
+    var feature: Feature.New
+    
     var body: some View {
-        
         
         HStack(alignment: .center, spacing: 20) {
             Spacer()
@@ -18,20 +20,20 @@ struct WNSubView: View {
                 RoundedRectangle(cornerRadius: 15)
                     .fill(.blue)
                     .frame(width: 50, height: 50)
-                Image(systemName: "scribble")
+                Image(systemName: feature.icon)
                     .foregroundColor(.white)
                     .font(.title)
             }
             
             VStack(alignment: .leading) {
-                Text("Apple pencil 3")
+                Text(feature.title)
                     .font(.body)
                     .bold()
-                Text("Supported")
+                Text(feature.subtitle)
                     .font(.subheadline)
                     .foregroundColor(.gray)
                     .bold()
-                Text("Available for iPad Pro and other platforms")
+                Text(feature.body)
                     .font(.caption2)
                     .foregroundColor(.gray)
                     .lineLimit(2)
@@ -47,7 +49,7 @@ struct WNSubView: View {
 
 struct WNSubView_Previews: PreviewProvider {
     static var previews: some View {
-        WNSubView()
+        WNSubView(feature: featuresData[0].new[0])
             .previewLayout(.fixed(width: 322, height: 75))
     }
 }

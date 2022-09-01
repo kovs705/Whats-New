@@ -7,19 +7,24 @@
 
 import SwiftUI
 
-struct Feature: Codable {
-     /// place properties of json features..
-     
-     let version: String
-     let new: [New]
-     
-     struct New: Codable {
-         let body: String
-         let icon: String
-         let title: String
-         let subtitle: String
-     }
- }
+final class UserData: ObservableObject {
+    @Published var features = featuresData
+}
+
+struct Feature: Codable, Hashable {
+    /// place properties of json features..
+    
+    let version: String
+    let new: [New]
+    
+    struct New: Codable, Hashable {
+        
+        let body: String
+        let icon: String
+        let title: String
+        let subtitle: String
+    }
+}
 
     // MARK: - Load features from JSON file:
 let featuresData: [Feature] = load(fileName: "features.json")

@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct WhatsNewPage: View {
+
+    @EnvironmentObject var userData: UserData
+    @Environment(\.presentationMode) var presentationMode
+    var featureObject: Feature
     
+    var firstFeatureObject = "1.1"
     
     var body: some View {
         NavigationView {
@@ -20,24 +25,23 @@ struct WhatsNewPage: View {
                     Text("What's new?")
                         .font(.largeTitle)
                         .bold()
-                    Text("Version 1.2")
+                    Text("Version \(featureObject.version)")
                         .font(.title)
                         .foregroundColor(.gray)
                 }
                 
                 
                 VStack(alignment: .center, spacing: 10) {
-                    WNSubView()
-                    WNSubView()
-                    WNSubView()
-                    WNSubView()
-                    WNSubView()
+                    ForEach(featureObject.new, id: \.self) { newFeature in
+                        WNSubView(feature: newFeature)
+                    }
                 }
                 .padding(.horizontal)
                 
                 
                 Button(action: {
-                    // place action here to close this view
+                    print("That worked, you sunnawabeach")
+                    self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
@@ -67,6 +71,8 @@ struct WhatsNewPage: View {
 
 struct WhatsNewPage_Previews: PreviewProvider {
     static var previews: some View {
-        WhatsNewPage()
+        let userData = UserData()
+        return WhatsNewPage(featureObject: userData.features[0])
+            .environmentObject(UserData())
     }
 }
