@@ -14,6 +14,8 @@ struct WhatsNewPage: View {
         NavigationView {
             
             VStack(spacing: 70) {
+                Spacer()
+                
                 VStack {
                     Text("What's new?")
                         .font(.largeTitle)
@@ -24,7 +26,7 @@ struct WhatsNewPage: View {
                 }
                 
                 
-                VStack(alignment: .center, spacing: 25) {
+                VStack(alignment: .center, spacing: 10) {
                     WNSubView()
                     WNSubView()
                     WNSubView()
@@ -35,7 +37,7 @@ struct WhatsNewPage: View {
                 
                 
                 Button(action: {
-                    
+                    // place action here to close this view
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
@@ -46,12 +48,16 @@ struct WhatsNewPage: View {
                             .foregroundColor(.white)
                     }
                 })
+                
+                Spacer()
+                Spacer()
             }
             .padding(.vertical)
             // end of VStack
             
             
         }
+        .navigationBarHidden(true)
         #if os(iOS)
         .navigationViewStyle(.stack)
         #endif

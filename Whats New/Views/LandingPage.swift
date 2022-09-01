@@ -21,20 +21,31 @@ struct LandingPage: View {
     var body: some View {
         
         NavigationView {
-            
-            NavigationLink(destination: WhatsNewPage(), label: {
+            VStack {
                 
-                ZStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(.blue)
-                    Text("Tap me!")
-                        .foregroundColor(.white)
-                        .font(.headline)
+                Spacer()
+                
+                NavigationLink(destination: WhatsNewPage(), label: {
                     
-                }
-            })
-            // end of NavLink
+                    ZStack(alignment: .center) {
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(.blue)
+                        Text("Tap me!")
+                            .foregroundColor(.white)
+                            .font(.body)
+                            .bold()
+                    }
+                    .frame(width: UIScreen.main.bounds.width - 80, height: 50)
+                    
+                })
+                .padding(.vertical)
+                // end of NavLink
+                
+            }
+            // end of VStack
+            .navigationTitle("Landing Page")
         }
+        .navigationBarTitleDisplayMode(.large)
         // end of NavView
         
         

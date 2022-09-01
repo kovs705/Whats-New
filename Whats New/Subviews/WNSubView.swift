@@ -40,6 +40,7 @@ struct WNSubView: View {
             Spacer()
             Spacer()
         }
+        .frame(width: UIScreen.main.bounds.width, height: 70)
         // end of HStack
     }
 }
@@ -47,6 +48,6 @@ struct WNSubView: View {
 struct WNSubView_Previews: PreviewProvider {
     static var previews: some View {
         WNSubView()
-            .previewLayout(.fixed(width: 320, height: 70))
+            .previewLayout(.fixed(width: 322, height: 75))
     }
 }
