@@ -31,7 +31,7 @@ struct WNSubView: View {
                     .font(.subheadline)
                     .foregroundColor(.gray)
                     .bold()
-                Text("Available for iPad Pro")
+                Text("Available for iPad Pro and other platforms")
                     .font(.caption2)
                     .foregroundColor(.gray)
                     .lineLimit(2)
