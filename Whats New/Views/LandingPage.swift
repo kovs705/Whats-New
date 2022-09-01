@@ -32,7 +32,6 @@ struct LandingPage: View {
                 Spacer()
                 
                 NavigationLink(destination: WhatsNewPage(featureObject: object).environmentObject(UserData()), label: {
-                    
                     ZStack(alignment: .center) {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(.blue)
@@ -42,10 +41,27 @@ struct LandingPage: View {
                             .bold()
                     }
                     .frame(width: UIScreen.main.bounds.width - 80, height: 50)
-                    
                 })
                 .padding(.vertical)
-                // end of NavLink
+                
+//                Button(action: {
+//                    showNew.toggle()
+//                }, label: {
+//                    ZStack(alignment: .center) {
+//                        RoundedRectangle(cornerRadius: 20)
+//                            .fill(.blue)
+//                        Text("Tap me!")
+//                            .foregroundColor(.white)
+//                            .font(.body)
+//                            .bold()
+//                    }
+//                    .frame(width: UIScreen.main.bounds.width - 80, height: 50)
+//
+//                })
+//                .sheet(isPresented: $showNew) {
+//                    WhatsNewPage(featureObject: object).environmentObject(UserData())
+//                }
+//                .padding(.vertical)
                 
             }
             // end of VStack

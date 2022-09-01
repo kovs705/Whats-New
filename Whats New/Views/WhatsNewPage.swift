@@ -17,7 +17,6 @@ struct WhatsNewPage: View {
     
     var body: some View {
         NavigationView {
-            
             VStack(spacing: 70) {
                 Spacer()
                 
@@ -40,7 +39,7 @@ struct WhatsNewPage: View {
                 
                 
                 Button(action: {
-                    print("That worked, you sunnawabeach")
+                    // print("That worked, you sunnawabeach")
                     self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     ZStack {
@@ -55,13 +54,30 @@ struct WhatsNewPage: View {
                 
                 Spacer()
                 Spacer()
-            }
             .padding(.vertical)
             // end of VStack
-            
+            }
             
         }
-        .navigationBarHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(.ultraThickMaterial)
+                            .frame(width: 30, height: 30)
+                        Image(systemName: "multiply")
+                            .foregroundColor(.gray)
+                            .font(.body)
+                    }
+                    
+                })
+            }
+        }
+        // .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
         #if os(iOS)
         .navigationViewStyle(.stack)
         #endif
