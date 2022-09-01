@@ -19,8 +19,25 @@ import SwiftUI
 struct LandingPage: View {
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        NavigationView {
+            
+            NavigationLink(destination: WhatsNewPage(), label: {
+                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.blue)
+                    Text("Tap me!")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                    
+                }
+            })
+            // end of NavLink
+        }
+        // end of NavView
+        
+        
     }
 }
 

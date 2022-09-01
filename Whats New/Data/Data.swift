@@ -11,7 +11,7 @@ struct Feature: Codable {
      /// place properties of json features..
      
      let version: String
-     let new: New
+     let new: [New]
      
      struct New: Codable {
          let body: String
