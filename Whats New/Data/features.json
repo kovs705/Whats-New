@@ -39,31 +39,31 @@
         "version": "1.1",
         "new": [
             {
-                "body": "",
-                "icon": ""
-                "title": "",
-                "subtitle": ""
+                "body": "Test 1.1",
+                "icon": "Test 1.1"
+                "title": "Item 1",
+                "subtitle": "Test 1.1"
             },
             
             {
-                "body": "",
-                "icon": ""
-                "title": "",
-                "subtitle": ""
+                "body": "Test 1.1",
+                "icon": "Test 1.1"
+                "title": "Item 2",
+                "subtitle": "Test 1.1"
             },
             
             {
-                "body": "",
-                "icon": ""
-                "title": "",
-                "subtitle": ""
+                "body": "Test 1.1",
+                "icon": "Test 1.1"
+                "title": "Item 3",
+                "subtitle": "Test 1.1"
             },
             
             {
-                "body": "",
-                "icon": ""
-                "title": "",
-                "subtitle": ""
+                "body": "Test 1.1",
+                "icon": "Test 1.1"
+                "title": "Item 4",
+                "subtitle": "Test 1.1"
             }
         ]
     }
