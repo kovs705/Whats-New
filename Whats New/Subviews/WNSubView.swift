@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WhatsNewPack
 
 struct WNSubView: View {
     

@@ -1,0 +1,79 @@
+
+
+
+[
+    {
+        "version": "1.2",
+        "new": [
+            {
+                "body": "Click Continue",
+                "icon": "scribble",
+                "title": "Apple Pencil 2",
+                "subtitle": "Supported"
+            },
+            
+            {
+                "body": "Click Continue",
+                "icon": "eraser.fill",
+                "title": "New design",
+                "subtitle": "Reimagined"
+            },
+            
+            {
+                "body": "Click Continue",
+                "icon": "hammer.fill",
+                "title": "Broken UI",
+                "subtitle": "Bug fixes"
+            },
+            
+            {
+                "body": "Click Continue",
+                "icon": "arrow.triangle.pull",
+                "title": "Local Files",
+                "subtitle": "Works best with your data 🥳"
+            },
+            
+            {
+                "body": "Click Continue",
+                "icon": "hammer.fill",
+                "title": "Something here",
+                "subtitle": "Check this out"
+            }
+        ]
+    },
+    
+    {
+        "version": "1.1",
+        "new": [
+            {
+                "body": "Test 1.1",
+                "icon": "Test 1.1",
+                "title": "Item 1",
+                "subtitle": "Test 1.1"
+            },
+            
+            {
+                "body": "Test 1.1",
+                "icon": "Test 1.1",
+                "title": "Item 2",
+                "subtitle": "Test 1.1"
+            },
+            
+            {
+                "body": "Test 1.1",
+                "icon": "Test 1.1",
+                "title": "Item 3",
+                "subtitle": "Test 1.1"
+            },
+            
+            {
+                "body": "Test 1.1",
+                "icon": "Test 1.1",
+                "title": "Item 4",
+                "subtitle": "Test 1.1"
+            }
+        ]
+    }
+    
+]
+

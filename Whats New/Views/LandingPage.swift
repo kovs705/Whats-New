@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WhatsNewPack
 
 // okay, it's been a while since I wrote in SwiftUI, so it can be tough when I'll work
 // with this app and page, but let's make some starting points;
@@ -31,7 +32,7 @@ struct LandingPage: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: WhatsNewPage(featureObject: object).environmentObject(UserData()), label: {
+                NavigationLink(destination: WhatsNew(featureObject: object).environmentObject(UserData()), label: {
                     ZStack(alignment: .center) {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(.blue)
