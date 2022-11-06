@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4ED2967C28C15BC80066D249 /* WhatsNewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2967B28C15BC80066D249 /* WhatsNewPage.swift */; };
 		4EF5BD6E29183DAE00F04BBE /* WhatsNewPack in Frameworks */ = {isa = PBXBuildFile; productRef = 4EF5BD6D29183DAE00F04BBE /* WhatsNewPack */; };
 		4EF5BD72291842E400F04BBE /* features.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EF5BD71291842E400F04BBE /* features.json */; };
 		4EF9FBDF28BEC7C50069B8CD /* Whats_NewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9FBDE28BEC7C50069B8CD /* Whats_NewApp.swift */; };
@@ -18,7 +17,6 @@
 
 /* Begin PBXFileReference section */
 		4E128B4028BF6C6D005655F6 /* WhatsNewPack */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = WhatsNewPack; sourceTree = "<group>"; };
-		4ED2967B28C15BC80066D249 /* WhatsNewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewPage.swift; sourceTree = "<group>"; };
 		4EF5BD71291842E400F04BBE /* features.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = features.json; sourceTree = "<group>"; };
 		4EF9FBDB28BEC7C50069B8CD /* Whats New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whats New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF9FBDE28BEC7C50069B8CD /* Whats_NewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whats_NewApp.swift; sourceTree = "<group>"; };
@@ -50,16 +48,8 @@
 			isa = PBXGroup;
 			children = (
 				4EF9FBE028BEC7C50069B8CD /* LandingPage.swift */,
-				4ED2967B28C15BC80066D249 /* WhatsNewPage.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		4ED2967E28C15ED90066D249 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Subviews;
 			sourceTree = "<group>";
 		};
 		4EF5BD6C29183DAE00F04BBE /* Frameworks */ = {
@@ -92,7 +82,6 @@
 			children = (
 				4EF9FBDE28BEC7C50069B8CD /* Whats_NewApp.swift */,
 				4EF5BD71291842E400F04BBE /* features.json */,
-				4ED2967E28C15ED90066D249 /* Subviews */,
 				4ED2967D28C15ED30066D249 /* Views */,
 				4E128B3A28BF6353005655F6 /* Data */,
 				4EF9FBE228BEC7C70069B8CD /* Assets.xcassets */,
@@ -185,7 +174,6 @@
 			files = (
 				4EF9FBE128BEC7C50069B8CD /* LandingPage.swift in Sources */,
 				4EF9FBDF28BEC7C50069B8CD /* Whats_NewApp.swift in Sources */,
-				4ED2967C28C15BC80066D249 /* WhatsNewPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
