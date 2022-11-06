@@ -11,7 +11,8 @@ import SwiftUI
 struct Whats_NewApp: App {
     var body: some Scene {
         WindowGroup {
-            LandingPage()
+            let userData = UserData()
+            WhatsNew(featureObject: userData.features[0])
         }
     }
 }

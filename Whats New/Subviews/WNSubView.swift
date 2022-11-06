@@ -13,7 +13,7 @@ struct WNSubView: View {
     
     var body: some View {
         
-        HStack(alignment: .center, spacing: 20) {
+        HStack(spacing: 20) {
             Spacer()
             // icon:
             ZStack {
@@ -24,25 +24,28 @@ struct WNSubView: View {
                     .foregroundColor(.white)
                     .font(.title)
             }
+            .navigationViewStyle(.stack)
             
             VStack(alignment: .leading) {
                 Text(feature.title)
                     .font(.body)
                     .bold()
                 Text(feature.subtitle)
+                    .bold()
                     .font(.subheadline)
                     .foregroundColor(.gray)
-                    .bold()
                 Text(feature.body)
                     .font(.caption2)
                     .foregroundColor(.gray)
                     .lineLimit(2)
             }
+            .frame(minWidth: 220, alignment: .leading)
+            
             
             Spacer()
             Spacer()
         }
-        .frame(width: UIScreen.main.bounds.width, height: 70)
+        .frame(height: 70)
         // end of HStack
     }
 }

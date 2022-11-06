@@ -1,13 +1,14 @@
 //
-//  WhatsNewPage.swift
+//  WhatsNew.swift
 //  Whats New
 //
-//  Created by Kovs on 02.09.2022.
+//  Created by Kovs on 06.11.2022.
 //
+
 
 import SwiftUI
 
-struct WhatsNewPage: View {
+struct WhatsNew: View {
 
     @EnvironmentObject var userData: UserData
     @Environment(\.presentationMode) var presentationMode
@@ -16,8 +17,9 @@ struct WhatsNewPage: View {
     var firstFeatureObject = "1.1"
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack(spacing: 70) {
+                Spacer()
                 Spacer()
                 
                 VStack {
@@ -30,21 +32,23 @@ struct WhatsNewPage: View {
                 }
                 
                 
-                VStack(alignment: .center, spacing: 10) {
+                VStack(alignment: .leading, spacing: 10) {
                     ForEach(featureObject.new, id: \.self) { newFeature in
                         WNSubView(feature: newFeature)
+                            .frame(width: UIScreen.main.bounds.width-20)
                     }
                 }
-                .padding(.horizontal)
+                .frame(width: UIScreen.main.bounds.width)
+                // .padding(.horizontal)
                 
                 
                 Button(action: {
                     // print("That worked, you sunnawabeach")
-                    self.presentationMode.wrappedValue.dismiss()
+                    // self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20)
-                            .frame(width: UIScreen.main.bounds.width - 80, height: 50)
+                            .frame(width: 350, height: 50)
                         Text("Continue")
                             .font(.body)
                             .bold()
@@ -54,42 +58,26 @@ struct WhatsNewPage: View {
                 
                 Spacer()
                 Spacer()
-            .padding(.vertical)
-            // end of VStack
+                    .padding(.vertical)
+                // end of VStack
             }
-            
-        }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    self.presentationMode.wrappedValue.dismiss()
-                }, label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 15)
-                            .fill(.ultraThickMaterial)
-                            .frame(width: 30, height: 30)
-                        Image(systemName: "multiply")
-                            .foregroundColor(.gray)
-                            .font(.body)
-                    }
-                    
-                })
-            }
-        }
-        // .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
-        #if os(iOS)
-        .navigationViewStyle(.stack)
-        #endif
-        //end of NavView
+//
+//        }
+//
+//        // .navigationBarHidden(true)
+//        .navigationBarBackButtonHidden(true)
+//        #if os(iOS)
+//        .navigationViewStyle(.stack)
+//        #endif
+//        //end of NavView
     }
 }
 
-struct WhatsNewPage_Previews: PreviewProvider {
+struct WhatsNew_Previews: PreviewProvider {
     static var previews: some View {
         let userData = UserData()
-        return WhatsNewPage(featureObject: userData.features[0])
-            .previewDevice("iPhone 13 Pro Max")
+        return WhatsNew(featureObject: userData.features[0])
+            .previewDevice("iPhone 14 Pro")
             .environmentObject(UserData())
     }
 }

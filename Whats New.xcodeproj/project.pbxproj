@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E128B3C28BF636A005655F6 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E128B3B28BF636A005655F6 /* Data.swift */; };
 		4E128B3E28BF63F0005655F6 /* features.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E128B3D28BF63F0005655F6 /* features.json */; };
+		4EBF607329180FC3006377A1 /* WhatsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF607229180FC3006377A1 /* WhatsNew.swift */; };
 		4ED2967C28C15BC80066D249 /* WhatsNewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2967B28C15BC80066D249 /* WhatsNewPage.swift */; };
 		4ED2968028C15EF20066D249 /* WNSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2967F28C15EF20066D249 /* WNSubView.swift */; };
 		4EF9FBDF28BEC7C50069B8CD /* Whats_NewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9FBDE28BEC7C50069B8CD /* Whats_NewApp.swift */; };
@@ -21,6 +22,7 @@
 		4E128B3B28BF636A005655F6 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4E128B3D28BF63F0005655F6 /* features.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = features.json; sourceTree = "<group>"; };
 		4E128B4028BF6C6D005655F6 /* WhatsNewPack */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = WhatsNewPack; sourceTree = "<group>"; };
+		4EBF607229180FC3006377A1 /* WhatsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNew.swift; sourceTree = "<group>"; };
 		4ED2967B28C15BC80066D249 /* WhatsNewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewPage.swift; sourceTree = "<group>"; };
 		4ED2967F28C15EF20066D249 /* WNSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WNSubView.swift; sourceTree = "<group>"; };
 		4EF9FBDB28BEC7C50069B8CD /* Whats New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whats New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF9FBE028BEC7C50069B8CD /* LandingPage.swift */,
+				4EBF607229180FC3006377A1 /* WhatsNew.swift */,
 				4ED2967B28C15BC80066D249 /* WhatsNewPage.swift */,
 			);
 			path = Views;
@@ -178,6 +181,7 @@
 			files = (
 				4EF9FBE128BEC7C50069B8CD /* LandingPage.swift in Sources */,
 				4E128B3C28BF636A005655F6 /* Data.swift in Sources */,
+				4EBF607329180FC3006377A1 /* WhatsNew.swift in Sources */,
 				4EF9FBDF28BEC7C50069B8CD /* Whats_NewApp.swift in Sources */,
 				4ED2967C28C15BC80066D249 /* WhatsNewPage.swift in Sources */,
 				4ED2968028C15EF20066D249 /* WNSubView.swift in Sources */,
@@ -315,13 +319,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "CodingKovs.Whats-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -344,13 +348,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "CodingKovs.Whats-New";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
